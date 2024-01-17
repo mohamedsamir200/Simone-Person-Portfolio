@@ -1,0 +1,250 @@
+@media screen and (max-width: 992px) {
+  .hamburger,
+  .toggle-menu {
+    display: block;
+  }
+  .nav-links ul {
+    flex-direction: column;
+    position: fixed;
+    justify-content: flex-start;
+    top: 0%;
+    right: -100%;
+    background-color: black;
+    width: 200px;
+    height: 100%;
+    margin-top: 55px;
+  }
+  .nav-links ul li {
+    width: 100%;
+    box-shadow: 0px -1px 0px #d1d6d4 inset;
+  }
+  .nav-links ul li a {
+    padding-left: 10px;
+    display: block;
+  }
+
+  .nav-links ul li a:hover {
+    box-shadow: 0px -1px 0px #fff inset,
+      700px 0px 0px rgb(255, 255, 255, 0.1) inset;
+  }
+
+  .nav-links ul li a:focus {
+    box-shadow: 0px -1px 0px #fff inset, 700px 0px rgb(255, 255, 255, 0.1) inset;
+  }
+  .navigation input:checked ~ .nav-links ul {
+    right: 0%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  /* header */
+  .header-content h1 {
+    font-size: 25px;
+    margin-top: 15px;
+  }
+  .header-content p {
+    font-size: 18px;
+    margin: 5px 0px;
+  }
+  .header-content {
+    margin-top: 100px;
+  }
+  .header-content button {
+    margin: 10px 0px;
+    padding: 10px 20px;
+  }
+
+  .h1-special {
+    font-size: 60px;
+    font-weight: 600;
+    color: #ddd;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  .p-special {
+    position: absolute;
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  /* about section */
+  .main-container {
+    width: 95%;
+    padding: 0px 10px;
+  }
+  .about-content .about-caption {
+    width: 100%;
+  }
+  .about-content .about-links {
+    width: 100%;
+  }
+
+  .about .experiences .about-experience {
+    width: 50%;
+  }
+
+  .about .experiences .about-experience h4 {
+    font-size: 35px;
+  }
+
+  .about .about-experience::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    border: 1px dotted #e0dede;
+    top: 0%;
+    right: 50%;
+  }
+  .about .about-experience::before {
+    content: "";
+    position: absolute;
+    height: 0%;
+    width: 100%;
+    border: 1px dotted #e0dede;
+    top: 50%;
+    right: 0%;
+  }
+    /* client */
+    .card {
+      background-color: #eee;
+      width: 100%;
+    }
+    
+.testimonial .main-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* contact */
+.contact .main-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+
+}
+.contact .address{
+  width: 100%;
+  line-height: 35px;
+  padding: 15px;
+  text-align: center;
+  margin-bottom: 15px;
+
+}
+.contact .send-nots {
+  width: 100%;
+}
+.contact h3 {
+  text-align: center;
+}
+  /* footer */
+  .footer {
+    display: flex;
+    flex-wrap: wrap;
+   justify-content: center; 
+  
+  }
+  .copy-right {
+    margin-bottom: 10px;
+    text-align: center;
+    width: 100%;
+  }
+  .terms {
+    text-align: center;
+    width: 100%;
+
+  }
+  
+
+}
+
+@media screen and (max-width: 600px) {
+  .Services .main-container .services-content {
+    width: 100%;
+    margin: 15px 0px;
+  }
+  .resume .resume-items {
+    width: 100%;
+  }
+
+  .prog-content {
+    width: 100%;
+    margin: 10px 0px;
+  }
+
+  /* portfolio section */
+ 
+.portfolio .column {
+  width: 100%;
+
+}
+
+
+
+}
+
+@media screen and (min-width: 601px) {
+  .Services .main-container .services-content {
+    width: 80%;
+    margin: 15px 0px;
+  }
+  .resume .resume-items {
+    width: 100%;
+  }
+  .resume .main-container {
+    width: 80%;
+  }
+  .prog-content {
+    width: 100%;
+    margin: 10px 0px;
+  }
+  .skills .main-container {
+    width: 80%;
+  }
+
+  /* portfolio  */
+  .portfolio .column {
+    width: 50%;
+  }
+  
+
+.profile-images .col3 {
+  display: none;
+}
+
+}
+
+
+
+@media screen and (min-width: 770px) {
+  .Services .main-container .services-content {
+    width: 50%;
+    margin: 15px 0px;
+  }
+
+  .resume .resume-items {
+    width: 47%;
+  }
+  .resume .main-container {
+    width: 90%;
+  }
+
+  .prog-content {
+    width: 47%;
+    margin: 10px 0px;
+  }
+  .skills .main-container {
+    width: 85%;
+  }
+  /* portfolio */
+  .portfolio .column {
+    width: 33.333%;
+  }
+  
+.profile-images .col3 {
+  display: block;
+}
+}
