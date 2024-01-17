@@ -616,53 +616,48 @@ html {
   
 }
 
-
-.portfolio .pic{
-  position: relative;
-  margin: 10px 5px; 
-}
-
-.portfolio .column {
-  width: 33.33%;
-}
-
-
-.portfolio .profile-images {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  
-}
-.special-col{
-  height: fit-content;
-
-}
-
-.portfolio .pic img {
+.profile-content {
   width: 100%;
-  display: block; 
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 7px;
   border-radius: 10px;
+
 }
-.portfolio .portfolio-layer {
-  background-color: rgba(0, 0, 0, 0.6);
+.profile-content img {
+  width: 100%;
+  display: block;
+  transition: 1s;
+}
+.profile-layer {
+  position: absolute;
   width: 100%;
   height: 100%;
-  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
   top: 0;
   left: 0;
-  color: white;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: #fff;
   opacity: 0;
   transition: 1s;
-  border-radius: 10px;
-
 }
-.portfolio .pic:hover .portfolio-layer {
+.profile-content:hover .profile-layer{
   opacity: 1;
 }
+
+.profile-content:hover img {
+  transform: scale(1.3) rotate(10deg);
+  filter: blur(1px);
+}
+.profile-images {
+  column-count: 3;
+  column-gap: 7px;
+}
+
 
 /* testimonial section */
 
@@ -745,7 +740,6 @@ html {
   color: #20c997;
 }
 
-/* ========================= */
 .send-nots form input , .send-nots form textarea  {
   display: block;
   margin: 15px 0px;

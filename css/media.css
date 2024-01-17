@@ -1,3 +1,7 @@
+
+
+/* ==== Navigation Bar  ===== */
+
 @media screen and (max-width: 992px) {
   .hamburger,
   .toggle-menu {
@@ -34,8 +38,53 @@
   .navigation input:checked ~ .nav-links ul {
     right: 0%;
   }
-
 }
+/* ==== END Navigation Bar  ===== */
+
+@media screen and (max-width: 600px) {
+  .Services .main-container .services-content {
+    width: 100%;
+    margin: 15px 0px;
+  }
+  .resume .resume-items {
+    width: 100%;
+  }
+
+  .prog-content {
+    width: 100%;
+    margin: 10px 0px;
+  }
+  /* portfolio */
+  .profile-images {
+    column-count: 1;
+  }
+  .profile-content {
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .Services .main-container .services-content {
+    width: 80%;
+    margin: 15px 0px;
+  }
+  .resume .resume-items {
+    width: 100%;
+  }
+  .resume .main-container {
+    width: 80%;
+  }
+  .prog-content {
+    width: 100%;
+    margin: 10px 0px;
+  }
+  .skills .main-container {
+    width: 80%;
+  }
+}
+
 
 @media screen and (max-width: 768px) {
   /* header */
@@ -106,46 +155,43 @@
     top: 50%;
     right: 0%;
   }
-    /* client */
-    .card {
-      background-color: #eee;
-      width: 100%;
-    }
-    
-.testimonial .main-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
+  /* client */
+  .card {
+    background-color: #eee;
+    width: 100%;
+  }
 
-/* contact */
-.contact .main-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 80%;
+  .testimonial .main-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
 
-}
-.contact .address{
-  width: 100%;
-  line-height: 35px;
-  padding: 15px;
-  text-align: center;
-  margin-bottom: 15px;
-
-}
-.contact .send-nots {
-  width: 100%;
-}
-.contact h3 {
-  text-align: center;
-}
+  /* contact */
+  .contact .main-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 95%;
+  }
+  .contact .address {
+    width: 100%;
+    line-height: 35px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  .contact .send-nots {
+    width: 100%;
+  }
+  .contact h3 {
+    text-align: center;
+  }
   /* footer */
   .footer {
     display: flex;
     flex-wrap: wrap;
-   justify-content: center; 
-  
+    justify-content: center;
   }
   .copy-right {
     margin-bottom: 10px;
@@ -155,66 +201,7 @@
   .terms {
     text-align: center;
     width: 100%;
-
   }
-  
-
-}
-
-@media screen and (max-width: 600px) {
-  .Services .main-container .services-content {
-    width: 100%;
-    margin: 15px 0px;
-  }
-  .resume .resume-items {
-    width: 100%;
-  }
-
-  .prog-content {
-    width: 100%;
-    margin: 10px 0px;
-  }
-
-  /* portfolio section */
- 
-.portfolio .column {
-  width: 100%;
-
-}
-
-
-
-}
-
-@media screen and (min-width: 601px) {
-  .Services .main-container .services-content {
-    width: 80%;
-    margin: 15px 0px;
-  }
-  .resume .resume-items {
-    width: 100%;
-  }
-  .resume .main-container {
-    width: 80%;
-  }
-  .prog-content {
-    width: 100%;
-    margin: 10px 0px;
-  }
-  .skills .main-container {
-    width: 80%;
-  }
-
-  /* portfolio  */
-  .portfolio .column {
-    width: 50%;
-  }
-  
-
-.profile-images .col3 {
-  display: none;
-}
-
 }
 
 
@@ -239,12 +226,17 @@
   .skills .main-container {
     width: 85%;
   }
-  /* portfolio */
-  .portfolio .column {
-    width: 33.333%;
-  }
-  
-.profile-images .col3 {
-  display: block;
 }
+
+/* ==== portfolio ====== */
+@media screen and (min-width: 601px) and (max-width: 991px) {
+  /* portfolio */
+  .profile-images {
+    column-count: 2;
+  }
+  .profile-content {
+    width: 95%;
+    margin: auto;
+    margin-bottom: 10px;
+  }
 }
